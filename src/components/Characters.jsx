@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './styles/Characters.css'
 
 const Characters = () => {
     const [characters, setCharacters] = useState([])
@@ -11,13 +12,17 @@ const Characters = () => {
     console.log(characters)
     
     return (
-        <div>
-            {characters.map((character) => (
+        <div className='Characters'>
+            <div className="Characters-grid">
+               {characters.map((character) => (
                 <div key={character.id}>
                     <img src={character.image} alt={character.name} />
                     <h2>{character.name}</h2>
+                    <span>¿Está vivo?: {character.status == 'Alive' ? '💚' : '💔'}</span>
                 </div>
-            ))}
+                ))} 
+            </div>
+            
         </div>
     )
 }

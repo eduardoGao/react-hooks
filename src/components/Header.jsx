@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <div className="Header">
-            <p>Cambia el estilo de la aplicación</p>
+            <h1>Rick and Morty</h1>
             <button type='button' onClick={handleClick}>{darkMode ? 'Dark Mode' : 'Ligth Mode'}</button>
         </div>
     )

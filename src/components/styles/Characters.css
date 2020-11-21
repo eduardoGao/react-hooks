@@ -1,0 +1,15 @@
+.Characters {
+    display: grid;
+    grid-template-columns: minmax(auto);
+    justify-content: center;
+}
+
+.Characters-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+.Characters-grid img{
+    width: 175px;
+    border-radius: 50%;
+}
